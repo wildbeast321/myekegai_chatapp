@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "253875326987",
+    "project_id": "myekegai",
+    "storage_bucket": "myekegai.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:253875326987:android:548b81fa1fda895b12370e",
+        "android_client_info": {
+          "package_name": "com.anirudhacharya.myekegai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "253875326987-bho8rreq8f4tngo39jchlmv5h5vsvj7u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.anirudhacharya.myekegai",
+            "certificate_hash": "45801dd8d1a902ee65017855cca6a92284ce89f4"
+          }
+        },
+        {
+          "client_id": "253875326987-vjm7thjqlljv90r02lfqedmj3h4rv1v5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKlkxrECXccr9DINt6aOheT9TEIAaF9SQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "253875326987-jjk4ve2e89ofuo7plcv2rvn0obs9khq1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "253875326987-13vl0mv7sr51l6da475mpct29j7vnq7n.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.chatApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

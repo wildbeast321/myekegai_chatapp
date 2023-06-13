@@ -55,7 +55,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyCKlkxrECXccr9DINt6aOheT9TEIAaF9SQ',
-    appId: '1:253875326987:android:d90f4a9c2cc6811912370e',
+    appId: '1:253875326987:android:409583de99a545a812370e',
     messagingSenderId: '253875326987',
     projectId: 'myekegai',
     storageBucket: 'myekegai.appspot.com',
@@ -63,7 +63,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyArw3PxDETJnfIOAAaC7Bf0IqBVisw9P5w',
-    appId: '1:253875326987:ios:ebec9ba01351e57912370e',
+    appId: '1:253875326987:ios:2cb63a789a20ffe412370e',
     messagingSenderId: '253875326987',
     projectId: 'myekegai',
     storageBucket: 'myekegai.appspot.com',
@@ -74,7 +74,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions macos = FirebaseOptions(
     apiKey: 'AIzaSyArw3PxDETJnfIOAAaC7Bf0IqBVisw9P5w',
-    appId: '1:253875326987:ios:ebec9ba01351e57912370e',
+    appId: '1:253875326987:ios:2cb63a789a20ffe412370e',
     messagingSenderId: '253875326987',
     projectId: 'myekegai',
     storageBucket: 'myekegai.appspot.com',
