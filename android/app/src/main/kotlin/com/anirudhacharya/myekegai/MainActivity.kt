@@ -1,4 +1,4 @@
-package com.harshRajpurohit.we_chat
+package com.anirudhacharya.myekegai
 
 import io.flutter.embedding.android.FlutterActivity
 
