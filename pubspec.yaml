@@ -1,4 +1,4 @@
-name: we_chat
+name: myekegai
 description: A new Flutter project.
 
 publish_to: 'none'
@@ -6,7 +6,7 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.18.4 <3.0.0'
+  sdk: '>=2.18.4 <3.1.0'
 
 dependencies:
   flutter:
@@ -15,15 +15,15 @@ dependencies:
 
   # For using cupertino icons
   cupertino_icons: ^1.0.2
-  
+
   # For integrating firebase
-  firebase_core: ^2.2.0
+  firebase_core: ^2.13.1
 
   # For handling firebase authentication
-  firebase_auth: ^4.1.3
+  firebase_auth: ^4.6.2
 
   # For handling google sign in
-  google_sign_in: ^5.4.2
+  google_sign_in: ^6.1.4
 
   # For accessing cloud firestore database
   cloud_firestore: ^4.1.0
@@ -51,12 +51,24 @@ dependencies:
 
   # For storing images into gallery
   gallery_saver: ^2.3.2
-
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "images/icon.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  remove_alpha_ios: true
+  windows:
+    generate: true
+    image_path: "images/icon.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "images/icon.png"
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
+  flutter_launcher_icons: ^0.13.1
 #   flutter_launcher_icons: "^0.10.0"
 
 # flutter_icons:

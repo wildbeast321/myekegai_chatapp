@@ -25,7 +25,7 @@ class _SplashScreenState extends State<SplashScreen> {
       SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
       SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
           systemNavigationBarColor: Colors.white,
-          statusBarColor: Colors.white));
+          statusBarColor: Colors.transparent));
 
       if (APIs.auth.currentUser != null) {
         log('\nUser: ${APIs.auth.currentUser}');
@@ -50,19 +50,13 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Stack(children: [
         //app logo
         Positioned(
-            top: mq.height * .15,
+            top: mq.height * .35,
             right: mq.width * .25,
             width: mq.width * .5,
             child: Image.asset('images/icon.png')),
 
         //google login button
-        Positioned(
-            bottom: mq.height * .15,
-            width: mq.width,
-            child: const Text('MADE IN INDIA WITH ❤️',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                    fontSize: 16, color: Colors.black87, letterSpacing: .5))),
+
       ]),
     );
   }

@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -28,10 +25,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -49,22 +43,43 @@ class DefaultFirebaseOptions {
     }
   }
 
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyBIP2EDuZdFoWifISHPUqGZsUFD_QYDqAY',
+    appId: '1:253875326987:web:7f8ecc2b908d817012370e',
+    messagingSenderId: '253875326987',
+    projectId: 'myekegai',
+    authDomain: 'myekegai.firebaseapp.com',
+    storageBucket: 'myekegai.appspot.com',
+    measurementId: 'G-6YX48ZMVJZ',
+  );
+
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBeszZHLYJNyjUhpujMH9yZ4ol9JqsAmPU',
-    appId: '1:288842837392:android:1353619813061d867a5715',
-    messagingSenderId: '288842837392',
-    projectId: 'we-chat-75f13',
-    storageBucket: 'we-chat-75f13.appspot.com',
+    apiKey: 'AIzaSyCKlkxrECXccr9DINt6aOheT9TEIAaF9SQ',
+    appId: '1:253875326987:android:4d9f575f050a771a12370e',
+    messagingSenderId: '253875326987',
+    projectId: 'myekegai',
+    storageBucket: 'myekegai.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCCYZoZ5DvuitZJ7qK5iWM3ARHBDoFFriY',
-    appId: '1:288842837392:ios:f39c8dc31525a6687a5715',
-    messagingSenderId: '288842837392',
-    projectId: 'we-chat-75f13',
-    storageBucket: 'we-chat-75f13.appspot.com',
-    androidClientId: '288842837392-gvt1l790g0t1fmnurc5pmko3oss8b1tq.apps.googleusercontent.com',
-    iosClientId: '288842837392-sgib97u6439i4jte3bo19u00fh663euu.apps.googleusercontent.com',
+    apiKey: 'AIzaSyArw3PxDETJnfIOAAaC7Bf0IqBVisw9P5w',
+    appId: '1:253875326987:ios:ebec9ba01351e57912370e',
+    messagingSenderId: '253875326987',
+    projectId: 'myekegai',
+    storageBucket: 'myekegai.appspot.com',
+    androidClientId: '253875326987-1oa4ld5mm6k9php5nrfngv3bpfkmbe7l.apps.googleusercontent.com',
+    iosClientId: '253875326987-90d4ti0108h5f53b2rl0pbnr57vvh5ts.apps.googleusercontent.com',
+    iosBundleId: 'com.harshRajpurohit.weChat',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyArw3PxDETJnfIOAAaC7Bf0IqBVisw9P5w',
+    appId: '1:253875326987:ios:ebec9ba01351e57912370e',
+    messagingSenderId: '253875326987',
+    projectId: 'myekegai',
+    storageBucket: 'myekegai.appspot.com',
+    androidClientId: '253875326987-1oa4ld5mm6k9php5nrfngv3bpfkmbe7l.apps.googleusercontent.com',
+    iosClientId: '253875326987-90d4ti0108h5f53b2rl0pbnr57vvh5ts.apps.googleusercontent.com',
     iosBundleId: 'com.harshRajpurohit.weChat',
   );
 }

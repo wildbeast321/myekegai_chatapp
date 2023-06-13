@@ -4,8 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_notification_channel/flutter_notification_channel.dart';
 import 'package:flutter_notification_channel/notification_importance.dart';
-import 'package:we_chat/screens/splash_screen.dart';
-
+import 'package:myekegai/screens/splash_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 
@@ -33,16 +32,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'We Chat',
+        title: 'Myekegai',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
             appBarTheme: const AppBarTheme(
           centerTitle: true,
-          elevation: 1,
-          iconTheme: IconThemeData(color: Colors.black),
-          titleTextStyle: TextStyle(
-              color: Colors.black, fontWeight: FontWeight.normal, fontSize: 19),
-          backgroundColor: Colors.white,
+          elevation: 3,
+              iconTheme: IconThemeData(color: Colors.white),
+              titleTextStyle: TextStyle(
+                  color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
+          backgroundColor: Colors.blue,
         )),
         home: const SplashScreen());
   }

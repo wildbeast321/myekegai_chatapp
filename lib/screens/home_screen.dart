@@ -96,7 +96,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       }
                     },
                   )
-                : const Text('We Chat'),
+                : const Text('Myekegai'),
             actions: [
               //search user button
               IconButton(
@@ -123,7 +123,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
           //floating button to add new user
           floatingActionButton: Padding(
-            padding: const EdgeInsets.only(bottom: 10),
+            padding: const EdgeInsets.only(bottom: 30, right: 15),
             child: FloatingActionButton(
                 onPressed: () {
                   _addChatUserDialog();

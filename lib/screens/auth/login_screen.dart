@@ -19,17 +19,9 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  bool _isAnimate = false;
 
-  @override
-  void initState() {
-    super.initState();
 
-    //for auto triggering animation
-    Future.delayed(const Duration(milliseconds: 500), () {
-      setState(() => _isAnimate = true);
-    });
-  }
+
 
   // handles google login button click
   _handleGoogleBtnClick() {
@@ -97,7 +89,7 @@ class _LoginScreenState extends State<LoginScreen> {
       //app bar
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        title: const Text('Welcome to We Chat'),
+        title: const Text('Welcome to Myekegai'),
       ),
 
       //body
@@ -105,7 +97,7 @@ class _LoginScreenState extends State<LoginScreen> {
         //app logo
         AnimatedPositioned(
             top: mq.height * .15,
-            right: _isAnimate ? mq.width * .25 : -mq.width * .5,
+            right: mq.width * .25,
             width: mq.width * .5,
             duration: const Duration(seconds: 1),
             child: Image.asset('images/icon.png')),
